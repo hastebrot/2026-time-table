@@ -7,16 +7,16 @@ export const routes: RouteObject[] = [
     Component: () => {
       const navigate = useNavigate();
       useEffect(() => {
-        navigate("/app", { replace: true });
+        navigate("/home", { replace: true });
       }, [navigate]);
       return null;
     },
   },
   {
-    path: "/app",
+    path: "/home",
     Component: () => (
       <div data-theme="dark" className="p-4 min-h-dvh">
-        <div>App</div>
+        <div>Home</div>
       </div>
     ),
   },
