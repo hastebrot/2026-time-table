@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@layer base {
+  :root:has([data-theme="dark"]) {
+    --bg-base: var(--color-zinc-900);
+    --border-base: var(--color-zinc-700);
+    --fg-base: var(--color-zinc-100);
+  }
+  :root:has([data-theme="light"]) {
+    --bg-base: var(--color-zinc-100);
+    --border-base: var(--color-zinc-300);
+    --fg-base: var(--color-zinc-900);
+  }
+  :root {
+    background-color: var(--bg-base);
+    border-color: var(--border-base);
+    color: var(--fg-base);
+    scrollbar-color: var(--border-base) var(--bg-base);
+  }
+}

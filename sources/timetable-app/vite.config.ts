@@ -23,8 +23,10 @@ export default defineConfig({
       output: {
         codeSplitting: {
           groups: [
-            { name: "react", test: "react|react-dom" },
-            { name: "modules", test: "[\\\\/]node_modules" },
+            { name: "react-aria", test: /react-aria-components/ },
+            { name: "react-router", test: /react-router/ },
+            { name: "react", test: /react|react-dom/ },
+            { name: "modules", test: /node_modules/ },
           ],
         },
       },
