@@ -6,7 +6,7 @@
   "scripts": {
     "build": "bun x --bun vite build",
     "dev": "bun x --bun vite dev",
-    "dev:debug": "bun x --bun vite dev --debug load,hmr --clearScreen=false",
+    "dev:debug": "bun x --bun vite dev --debug=load,hmr --clearScreen=false",
     "test": "bun test",
     "fmt": "oxfmt",
     "lint": "oxlint"
