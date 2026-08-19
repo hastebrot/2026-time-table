@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate, type RouteObject } from "react-router";
+import { RouteHome } from "./routeHome";
 
 export const routes: RouteObject[] = [
   {
@@ -15,8 +16,8 @@ export const routes: RouteObject[] = [
   {
     path: "/home",
     Component: () => (
-      <div data-theme="dark" className="p-4 min-h-dvh">
-        <div>Home</div>
+      <div data-theme="dark" className="min-h-dvh">
+        <RouteHome />
       </div>
     ),
   },

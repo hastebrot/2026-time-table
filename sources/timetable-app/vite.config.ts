@@ -14,6 +14,11 @@ export default defineConfig({
       },
     },
   ],
+  // server: {
+  //   watch: {
+  //     usePolling: true,
+  //   },
+  // },
   build: {
     sourcemap: false,
     minify: true,
